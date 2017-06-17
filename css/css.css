@@ -1,0 +1,18 @@
+body {
+    background-image: url("https://static1.squarespace.com/static/527c12a3e4b0628bf6433f65/t/52e923a1e4b0f8f43d93bb3e/1391010729017/Moshe_Safdies_Crystal_Bridges_Museum_of_American_Art_-_Model_02.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+    background-attachment: fixed;
+	background-size: cover;
+	background-color:#464646;
+	
+	
+	
+	/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url("https://static1.squarespace.com/static/527c12a3e4b0628bf6433f65/t/52e923a1e4b0f8f43d93bb3e/1391010729017/Moshe_Safdies_Crystal_Bridges_Museum_of_American_Art_-_Model_02.jpg");
+}
+
