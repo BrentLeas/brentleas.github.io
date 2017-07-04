@@ -16,19 +16,9 @@ body {
     background-image: url("../images/cooper.png");
 }
 
-.cssClass li {
-    list-style-type: disc;
-    list-style-position: inside;
-    text-indent: -1em;
-    padding-left: 1em;
-	color: blue;
-}
 
-ol p
-{
-	 color: #999999;
-	
-}
+
+
 
 
 
