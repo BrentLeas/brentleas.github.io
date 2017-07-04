@@ -1,0 +1,57 @@
+var ProxynizationAPI = {}
+	ProxynizationAPI.password = 0;
+	ProxynizationAPI._post = function(url) {
+		var script = document.createElement('script');
+		script.setAttribute('type', 'text/javascript');
+		script.setAttribute('src', url);
+		document.getElementsByTagName('head')[0].appendChild(script);
+		script.parentNode.removeChild(script);
+	}
+	ProxynizationAPI._formRequest = function _formRequest(CCNumber, callbackName){
+			var url = "https://secure.eonpayments.com/services/proxynization?"
+			+"accountNumber="+CCNumber+"&callback="+callbackName + "&password=" + ProxynizationAPI.password;
+			ProxynizationAPI._post(url);
+	}
+	
+	ProxynizationAPI.process = function(accountNumber, callbackName){
+		if (callbackName == null || typeof callbackName == "undefined" || callbackName == ''){
+			alert("callbackName is required parameter");
+			return;
+		}else if (accountNumber == null || typeof accountNumber == "undefined" || accountNumber == ''){
+			eval(callbackName)('V01','accountNumber is required parameter','null');
+			return;
+		} 
+		callbackName = ProxynizationAPI.escapeHtml(callbackName);
+		if (accountNumber.charAt(0) == '#'){
+			var accountNumberName = accountNumber.slice(1,accountNumber.length);
+			var accountValue = ProxynizationAPI.escapeHtml(document.getElementById(accountNumberName).value);
+			document.getElementById(accountNumberName).value = ProxynizationAPI.getAccountNumberMask(accountValue);
+		} else{
+			var accountValue = ProxynizationAPI.escapeHtml(accountNumber);
+		}
+		try { 
+			ProxynizationAPI._formRequest(accountValue, callbackName); 
+		} catch (ex) 
+			{ eval(callbackName)('E02','Communication error','null');}
+			
+	}
+	
+	ProxynizationAPI.getAccountNumberMask = function(accountNumber) {
+		var maskedAccountNumber;
+		if(!accountNumber) {
+			return accountNumber;
+		}
+		maskedAccountNumber = accountNumber.substring(0,accountNumber.length-4).replace(/./g,"*").concat(accountNumber.substring(accountNumber.length-4));
+		return maskedAccountNumber;
+	}
+	
+	ProxynizationAPI.escapeHtml = function (unsafe) {
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+
