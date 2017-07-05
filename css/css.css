@@ -5,19 +5,18 @@ body {
     background-attachment: fixed;
 	background-size: cover;
 	background-color:#464646;
-}	
+	
 	
 	
 	/* For mobile devices */
-@media only screen and (min-device-width: 400px) {
+@media only screen and (max-width: 767px) {
   body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
     background-image: url("../images/cooper.png");
-  }
 }
 
-img{
+.container {
     display: block;
     margin: 0 auto;
-	max-width: 100%;
-    height: auto;
 }
