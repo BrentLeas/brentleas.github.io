@@ -16,8 +16,10 @@ body {
     background-image: url("../images/cooper.png");
 }
 
-
-
+.container {
+    display: block;
+    margin: 0 auto;
+}
 
 
 
