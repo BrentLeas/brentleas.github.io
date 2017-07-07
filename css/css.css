@@ -29,6 +29,28 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+p {
+        
+        width: 95%;
+		margin: auto;
+    }
+
+.b4bullets
+
+{
+
+width: 95%;
+margin: auto;
+
+}
+
+.afterBullets {
+width: 95%;
+margin: auto;
+    }
+
+
 @media screen and (min-width: 1025px) {
     img {
         display: block;
@@ -37,7 +59,6 @@ img {
         height: auto;
     }
     p {
-        text-indent: 15px;
         padding-right: 300px;
         padding-bottom: 50px;
         padding-left: 300px;
