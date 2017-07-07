@@ -1,23 +1,19 @@
 html {
     background-image: url("../images/cooper.png");
-	background-repeat: no-repeat;
-	background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-attachment: fixed;
-	background-size: cover;
-	background-color:#464646;
-	background-size: cover;
+    background-size: cover;
+    background-color: #464646;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
 }
-
 .endorsers {
-
-padding-top: 30px;
-width: 95%;
-margin: auto;
+    padding-top: 30px;
+    width: 95%;
+    margin: auto;
 }
-
 .header {
-	color: #E74144;
-}	
+    color: #E74144;
+}
