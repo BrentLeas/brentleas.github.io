@@ -5,19 +5,90 @@ body {
     background-attachment: fixed;
 	background-size: cover;
 	background-color:#464646;
+	
+	color:white;
 }	
-	
-	
-	/* For mobile devices */
-@media only screen and (min-device-width: 400px) {
-  body {
-    background-image: url("../images/cooper.png");
-  }
+
+
+
+.bullets {  
+    list-style:none; 
+    text-indent:-20px; 
+    margin-left:20px;
+	color:white;
+    width: 300px;
+    
 }
+
+
+.header {
+	color: #E74144
+	
+}
+
+.media {
+	width: 50%;
+    float: left;
+    text-align: center;
+}
+img{
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+    height: auto;
+}
+
+
+
+
+	
+@media screen and (min-width: 1025px) {
+    
+	
 
 img{
     display: block;
     margin: 0 auto;
 	max-width: 100%;
     height: auto;
+}
+p {
+    text-indent: 15px;
+	
+    padding-right: 300px;
+    padding-bottom: 50px;
+    padding-left: 300px;
+	
+	
+}
+.b4bullets {
+    text-indent: 15px;
+	
+    padding-right: 300px;
+    padding-bottom: 50px;
+    padding-left: 300px;
+	margin-top: -50px;
+	
+	
+}
+
+.bullets {
+	
+width: 50%;
+
+margin: 0 auto;
+
+}
+
+
+
+
+
+.afterBullets{
+	
+    padding-right: 300px;
+    padding-bottom: 50px;
+    padding-left: 300px;
+
+
 }
