@@ -50,9 +50,40 @@ margin: auto;
 width: 95%;
 margin: auto;
     }
+	
+	
+.familyPhoto
+	
+	{
+		
+		
+        width:195px;
+		
+		display: block;
+        margin: 0 auto;
+		
+		
+	}	
 
 
 @media screen and (min-width: 1025px) {
+	
+	
+	.familyPhoto
+	
+	{
+		width:259.5px;
+		height:356.25px;
+		display: block;
+        margin: 0 auto;
+       
+		
+		
+	}
+	
+	
+	
+	
     img {
         display: block;
         margin: 0 auto;
