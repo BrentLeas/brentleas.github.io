@@ -84,6 +84,31 @@ margin: auto;
 @media screen and (min-width: 1025px) {
 	
 	
+	
+	
+	html,body {
+    background-image: url("../images/cooper.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+	height: 100%;
+	width: 100%;
+    color: white;
+	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	.familyPhoto
 	
 	{
