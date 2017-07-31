@@ -5,9 +5,17 @@ html,body {
     background-attachment: fixed;
     background-size: cover;
 	height: 100%;
-	min-height: 100%;
+	width: 100%;
     color: white;
+	
 }
+
+
+body {
+    padding-bottom: 20px;
+}
+
+
 .bullets {
     list-style: none;
     text-indent: -20px;
